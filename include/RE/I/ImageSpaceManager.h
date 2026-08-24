@@ -24,7 +24,10 @@ namespace RE
 			BSImagespaceShader*             BSImagespaceShaderISTemporalAA_UI;     // 08
 			BSImagespaceShader*             BSImagespaceShaderISTemporalAA_Water;  // 10
 			bool                            taaEnabled;                            // 18
+			std::uint8_t                    unk19[0x1F];                           // 19
+			bool                            taaWaterBlendingEnabled;               // 38
 		};
+		static_assert(offsetof(UNK_BSImagespaceShaderISTemporalAA, taaWaterBlendingEnabled) == 0x38);
 
 		enum ImageSpaceEffectEnum
 		{
